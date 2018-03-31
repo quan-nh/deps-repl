@@ -18,3 +18,27 @@ hello :a
 nil
 foo.other-bar=>
 ```
+
+## Friendly Mode
+With `rebel-readline` & `expound`
+```clj
+$ clj -A:friendly
+[Rebel readline] Type :repl/help for online help info
+user=> (require '[expound.alpha :as expound])
+nil
+user=> (expound/expound string? 1)
+nil
+-- Spec failed --------------------
+
+  1
+
+should satisfy
+
+  string?
+
+
+
+-------------------------
+Detected 1 error
+user=>
+```

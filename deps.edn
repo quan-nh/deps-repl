@@ -1,3 +1,9 @@
 {:paths ["src"]
 
- :deps {org.clojure/clojure {:mvn/version "1.9.0"}}}
+ :deps {org.clojure/clojure {:mvn/version "1.9.0"}}
+
+ :aliases
+ {:friendly {:extra-paths ["dev"]
+             :extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.2"}
+                          expound {:mvn/version "0.5.0"}}
+             :main-opts ["-m" "friendly"]}}}
