@@ -1,8 +1,15 @@
 
 ## Call the -main function
+### Clj
 ```sh
 $ clj -m foo.other-bar a b c
 hello a
+```
+
+## Cljs with node.js modules
+```sh
+$ npm install
+$ clj -A:cljs -m foo.baz
 ```
 
 ## REPL
@@ -19,7 +26,7 @@ nil
 foo.other-bar=>
 ```
 
-## Friendly Mode
+## REPL Friendly Mode
 With `rebel-readline` & `expound`
 ```clj
 $ clj -A:friendly
@@ -41,10 +48,4 @@ should satisfy
 -------------------------
 Detected 1 error
 user=>
-```
-
-## Cljs with node.js
-```sh
-$ npm install
-$ clj -A:cljs -m foo.baz
 ```
