@@ -1,5 +1,7 @@
 (ns foo.baz
   (:require left-pad))
 
-(defn -main []
-  (prn (left-pad "foo" 5)))
+(defn -main [& args]
+  (let [s (first args)
+        n (-> args second js/parseInt)]
+    (prn (left-pad s n))))

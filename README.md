@@ -9,7 +9,8 @@ hello a
 ## Cljs with node.js modules
 ```sh
 $ npm install
-$ clj -A:cljs -m foo.baz
+$ clj -A:cljs -m foo.baz foo 5
+"  foo"
 ```
 
 ## REPL
