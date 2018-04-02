@@ -42,3 +42,9 @@ should satisfy
 Detected 1 error
 user=>
 ```
+
+## Cljs with node.js
+```sh
+$ npm install
+$ clj -A:cljs -m foo.baz
+```
